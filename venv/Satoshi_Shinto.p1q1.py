@@ -6,26 +6,26 @@
 
 import time
 
-question = int(input("What is 1+1:"))
-question_2 = int(input("What is 5+5:"))
+question = str(input("What is 1+1:")).strip(" ")
+question_2 = str(input("What is 5+5:")).strip(" ")
 question_3 = input("What is 3*3: A = 10 B = 12 C = 9 \n Answer the alphabet.").lower().strip(" ")
-question_4 = int(input("What is the sum of the multiple 6 between 100 to 1000"))
+question_4 = str(input("What is the sum of the multiple 6 between 100 to 1000")).strip(" ")
 question_5 = input("What is a line segment which the end points both lie on a curve called?").lower().strip(" ")
 
 answer_score = 0
 
 #If the answer is correct, score +1
 
-if question == 2:
+if question == "2":
     answer_score += 1
 
-    if question_2 == 10:
+    if question_2 == "10":
         answer_score += 1
 
         if question_3 == "c":
             answer_score += 1
 
-            if question_4 == 82350:
+            if question_4 == "82350":
                 answer_score += 1
 
                 if question_5 == "a chord" or "chord":
