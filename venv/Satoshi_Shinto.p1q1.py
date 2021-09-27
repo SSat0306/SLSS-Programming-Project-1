@@ -6,6 +6,7 @@
 
 import time
 
+# write questions and store in a  variable.
 question = str(input("What is 1+1:")).strip(" ")
 question_2 = str(input("What is 5+5:")).strip(" ")
 question_3 = input("What is 3*3: A = 10 B = 12 C = 9 \n Answer the alphabet.").lower().strip(" ")
